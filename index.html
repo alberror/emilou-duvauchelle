@@ -8,15 +8,38 @@
 </head>
 <body>
     <main>
-      <div class="header">
-        <div class="title">
-          <h1>Émilou Duvauchelle</h1>
-          <h2>Artiste Scénographe</h2>
+      <div class="header-container">
+        <div class="header">
+          <div class="title">
+            <h1>Émilou Duvauchelle</h1>
+            <h2>Artiste Scénographe</h2>
+          </div>
+          <ul class="links">
+            <li><a href="./assets/pdfs/book.pdf">Book</a></li> |
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <ul class="links">
-          <li><a href="./assets/pdfs/book.pdf">Book</a></li> |
-          <li><a href="mailto:duvauchelle.e@gmail.com">Contact</a></li>
-        </ul>
+      </div>
+      <div id="contact" class="contact-form">
+        <h2>Contactez-moi !</h2>
+
+        <div class="form-container">
+          <img src="./assets/images/contact.jpg" alt="Contactez-moi">
+          <form
+            action="https://formspree.io/xeqraoko"
+            method="POST"
+          >
+            <label>
+              Votre email :
+              <input type="text" name="_replyto">
+            </label>
+            <label>
+              Votre message :
+              <textarea name="message"></textarea>
+            </label>
+            <button type="submit">Envoyer</button>
+          </form>
+        </div>
       </div>
     </main>
 </body>

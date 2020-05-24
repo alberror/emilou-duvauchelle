@@ -6,19 +6,25 @@
 html, body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
+
 main {
-    background-image: url("./assets/images/background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     color: white;
     font-family: "Orator";
     font-variant-caps: all-small-caps;
     font-weight: 100;
-    height: 100vh;
     position: relative;
-    width: 100vw;
+    width: 100%;
+}
+
+.header-container {
+    background-image: url("./assets/images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 
 .header {
@@ -57,6 +63,87 @@ ul {
 a {
     color: white;
     text-decoration: none;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+.form-container img {
+    object-fit: cover;
+    width: 30vw;
+}
+
+.contact-form {
+    align-items: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.contact-form h2 {
+    font-size: 32px;
+}
+
+.contact-form form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form label {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.contact-form form label input, .contact-form form label textarea {
+    border: solid black 1px;
+    border-radius: 8px;
+    padding: 8px;
+    width: 260px;
+}
+
+.contact-form form label input {
+    height: 2rem;
+}
+
+.contact-form form label textarea {
+    height: 4rem;
+}
+
+.contact-form form button {
+    background-color: black;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 30px;
+    width: 120px;
+}
+
+.contact-form form button:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 767px) {
+    .form-container {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .form-container img {
+        margin-bottom: 20px;
+        width: 90vw;
+    } 
 }
 
 @media screen and (min-width: 768px) {
