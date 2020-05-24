@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Orator";
+    src: url("./assets/fonts/ORATORSTD.OTF");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+main {
+    background-image: url("./assets/images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: "Orator";
+    font-variant-caps: all-small-caps;
+    font-weight: 100;
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25vh;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.4rem;
+    letter-spacing: -6px;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.6rem;
+    letter-spacing: -4px;
+    margin-top: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        left: 10vw;
+    }
+}
